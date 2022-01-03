@@ -21,7 +21,7 @@ function App() {
   }
   return (
     <>
-      <Router>
+      <Router basename="process.env.PUBLIC_URL">
         <Navbar title="TextUtils" showAlert={showAlert} />
         <Alert alert={alert} />
         <Routes>
