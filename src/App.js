@@ -4,7 +4,7 @@ import Alert from "./components/Alert";
 import React, { useState } from "react";
 import About from "./components/About";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 let currentTheme = localStorage.getItem("theme")
   ? localStorage.getItem("theme")
@@ -21,7 +21,7 @@ function App() {
   }
   return (
     <>
-      <Router basename="process.env.PUBLIC_URL">
+      <Router>
         <Navbar title="TextUtils" showAlert={showAlert} />
         <Alert alert={alert} />
         <Routes>
