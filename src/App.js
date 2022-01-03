@@ -21,7 +21,7 @@ function App() {
   }
   return (
     <>
-      <Router>
+      <Router basename="/">
         <Navbar title="TextUtils" showAlert={showAlert} />
         <Alert alert={alert} />
         <Routes>
